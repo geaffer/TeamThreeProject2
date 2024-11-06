@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService {
         if (profileImagePath != null && !profileImagePath.isEmpty()) {
             Path originalPath = Paths.get(profileImagePath);
             if (Files.exists(originalPath)) {
-                String uploadDir = "D:\\upload";
+                String uploadDir = "c:\\upload";
                 String fileName = originalPath.getFileName().toString();
                 Path uploadPath = Paths.get(uploadDir);
 
@@ -144,5 +144,6 @@ public class UserServiceImpl implements UserService {
                 .introduce(user.getIntroduce())
                 .build();
     }
+
 
 }

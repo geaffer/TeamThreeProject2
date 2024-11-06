@@ -42,4 +42,5 @@ public class User {
 
     @Column(length = 255)
     private String introduce;
+
 }
